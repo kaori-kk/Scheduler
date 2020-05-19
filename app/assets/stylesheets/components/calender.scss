@@ -1,0 +1,12 @@
+.e-schedule{
+  width: 80% !important;
+  height: 80vh !important;
+  overflow: scroll !important;
+  margin: 50px auto;
+}
+
+.e-schedule-toolbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
