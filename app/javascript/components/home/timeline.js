@@ -1,11 +1,18 @@
 import React, { Component } from "react"
-import { Inject, ScheduleComponent, Day } from '@syncfusion/ej2-react-schedule';
+import {ScheduleComponent, ViewsDirective,ViewDirective, Day,Inject} from '@syncfusion/ej2-react-schedule';
 
 class Timeline extends Component {
   render(){
-    return <ScheduleComponent>
-      <Inject services={Day}/>
-    </ScheduleComponent>
+    return (
+      <div className="today">
+        <ScheduleComponent>
+          <ViewsDirective>
+            <ViewDirective option='Day'/>
+          </ViewsDirective>
+        <Inject services={[Day] } />
+        </ScheduleComponent>
+      </div>
+    )
   }
 }
 
