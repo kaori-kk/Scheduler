@@ -3,10 +3,23 @@
   height: 80vh !important;
   overflow: scroll !important;
   margin: 50px auto;
+  font-family: 'Caveat', cursive !important;
 }
 
 .e-schedule-toolbar-container {
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.e-schedule-toolbar, .e-toolbar-items, .e-hor-nav, .e-tbar-btn{
+  background: #d5b9b2 !important;
+}
+
+.e-tbar-btn-text,.e-header-calendar, .e-today{
+  font-family: 'Caveat', cursive !important;
+}
+
+.e-current-day,.e-active-view,.e-active-view {
+  color: #cc444b !important;
 }

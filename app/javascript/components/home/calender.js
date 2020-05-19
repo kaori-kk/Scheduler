@@ -1,11 +1,18 @@
 import React, { Component } from "react"
-import { Inject, ScheduleComponent, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-react-schedule';
+import {ScheduleComponent, ViewsDirective,ViewDirective, Day, Week, Month, Inject} from '@syncfusion/ej2-react-schedule';
 
 class Calender extends Component {
   render(){
-    return <ScheduleComponent>
-      <Inject services={[Day, Week, WorkWeek, Month, Agenda ]} />
-    </ScheduleComponent>
+    return (
+      <ScheduleComponent>
+        <ViewsDirective>
+            <ViewDirective option='Day'/>
+            <ViewDirective option='Week'/>
+            <ViewDirective option='Month'/>
+          </ViewsDirective>
+        <Inject services={[Day, Week, Month] } />
+      </ScheduleComponent>
+    )
   }
 }
 

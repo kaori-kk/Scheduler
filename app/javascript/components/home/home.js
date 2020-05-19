@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import Calender from './calender'
 
+
 class Home extends Component {
   consutructor(){
     // super()
@@ -14,6 +15,7 @@ class Home extends Component {
   render(){
     return (
       <Calender/>
+      
     )
   }
 }
