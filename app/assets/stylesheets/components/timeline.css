@@ -1,0 +1,13 @@
+.today {
+  /* width: 80%;
+  height: 80%; */
+  display: flex;
+  margin: 20px 125px 20px 125px;
+}
+
+.today-to-do{
+  background: black;
+  width: 45vw;
+  margin-left: 20px;
+}
+

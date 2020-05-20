@@ -11,6 +11,9 @@ class Timeline extends Component {
           </ViewsDirective>
         <Inject services={[Day] } />
         </ScheduleComponent>
+        <div className="today-to-do">
+          <h2>To Do</h2>
+        </div>
       </div>
     )
   }
